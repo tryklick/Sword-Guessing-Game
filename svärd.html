@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <script defer src="omexamination2.js"></script>
+</head>
+
+<body>
+  <main class="container-fluid p-2">
+    <div class="justify-content-center">
+      <h1 class="text-center">Gissa rätt i rad!</h1>
+      <h2 class="text-center">Gissa vilken sorts svärd det är, klara så många i rad som du kan</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm center-block text-center">
+            <div class="svärdwrapper">
+              <img class="img-responsive center-block svärdbild" src="img/default.png">
+              <div class="knapprad osynlig">
+                <p>Typ av svärd</p>
+                <button class="europeiskt">Europeiskt</button>
+                <button class="japanskt">Japanskt</button>
+                <button class="fantasi">Fantasy</button>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+  </main>
+
+  <div id="svar" class="svar osynlig">
+    <div>
+      <h2>Antal rätt i rad: 0</h2>
+    </div>
+  </div>
+
+  <div id="meny" class="overlay">
+    <div>
+      <button>Starta en runda</button>
+      <div id="resultat">
+        <div id="senaste">
+        </div>
+        <div id="highscore">
+          <!--resultet av din senaste spelomgång-->
+          Din highscore är: 0
+        </div>     
+        
+      </div>
+    </div>
+  </div>
+
+ 
+
+  <footer class="row justify-content-center">
+    <div class="col-sm-8 col-md-6 text-center">
+      <hr />
+      <!-- Lägg ditt namn här med hjälp av javascript!-->
+      <span id="footer"></span>
+    </div>
+  </footer>
+</body>
+
+</html>

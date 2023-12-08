@@ -1,0 +1,165 @@
+@import "https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap";
+
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "Gochi Hand";
+}
+
+div {
+  padding: 4mm;
+}
+
+.lista>img {
+  padding: 10px;
+
+}
+
+.svärdbild {
+  min-height: 200px;
+  min-width: 200px;
+  max-height: 300px;
+  max-width: 300px;
+}
+
+img {
+  border: 2mm ridge orange;
+}
+
+.rätt {
+  border: 2mm ridge greenyellow;
+}
+
+.fel {
+  border: 2mm ridge red;
+}
+
+div.resultat div section img {
+  max-width: 100px;
+  border: 1mm ridge brown;
+}
+
+img.small {
+  max-width: 200px;
+  max-height: 200px;
+  border: none;
+}
+
+.synlig {
+  visibility: visible;
+
+}
+
+.osynlig {
+  visibility: hidden;
+}
+
+footer {
+  opacity: 0.5;
+}
+
+#footer::before {
+  content: "⚔️";
+}
+
+#footer::after {
+  content: "⚔️";
+}
+
+.overlay {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.418);
+  z-index: 2;
+}
+
+.overlay>div {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  min-height: 300px;
+  min-width: 300px;
+  top: 10%;
+  color: darkgoldenrod;
+  background-color: rgba(0, 0, 0, 0.808);
+  border-style: dashed;
+  
+
+}
+
+.svar {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(121, 214, 136, 0.418);
+  z-index: 2;
+}
+
+.svar>div {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  width: 80%;
+  top: 20%;
+  background-color: rgba(255, 255, 255, 0.808);
+  border-style: solid;
+}
+
+
+.svar>img 
+{
+  max-width: 200px;
+  max-height: 200px;
+  border: none;
+}
+
+.svärdwrapper {
+  font-family: arial;
+  font-size: 24px;
+  margin: 25px;
+  outline: dashed 1px rgba(0, 0, 0, 0.404);
+
+  display: flex;
+  justify-content: center;
+}
+
+.bildwrapper {
+  text-align: center;
+}
+
+.pos {
+  display: flex;
+  justify-content: center;
+}
+
+.knapprad {
+  position: absolute;
+  width: max-content;
+  border-style: solid;
+  border-color: rgba(165, 42, 42, 0.233);
+  background-color: rgba(202, 177, 177, 0.842);
+}
+
+.starta {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* width: 100px;
+  height: 200px; */
+  border-style: solid;
+  border-color: rgba(165, 42, 42, 0.233);
+  background-color: rgba(202, 177, 177, 0.842);
+}
